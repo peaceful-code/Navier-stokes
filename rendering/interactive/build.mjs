@@ -1,0 +1,14 @@
+import {build} from 'esbuild';
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {fileURLToPath} from 'node:url';
+import path from 'node:path';
+const here=path.dirname(fileURLToPath(import.meta.url));
+const out=path.resolve(here,'../../output/immersive');
+const compiled=await build({entryPoints:[path.join(here,'viewer.js')],bundle:true,minify:true,write:false,format:'iife',target:'es2020'});
+const template=await readFile(path.join(here,'template.html'),'utf8');
+const script=compiled.outputFiles[0].text.replaceAll('</script','<\\/script');
+const license=await readFile(path.join(here,'node_modules/three/LICENSE'),'utf8');
+const html=template.replace('/* BUNDLE */',()=>script).replace('</head>',`<!-- Three.js license\n${license}\n--></head>`);
+await mkdir(out,{recursive:true});
+await writeFile(path.join(out,'EXPLORER_LE_VORTEX.html'),html);
+console.log(`Built autonomous HTML: ${(Buffer.byteLength(html)/1048576).toFixed(1)} MiB`);

@@ -1,0 +1,17 @@
+# Logiciels et dépendances : réinstallables
+.runtime/
+.venv/
+node_modules/
+
+# Fichiers temporaires
+.DS_Store
+__pycache__/
+*.pyc
+*.blend1
+
+# Dépôt OpenAI original, conservé séparément
+/NavierStokesAndEuler/
+
+# Images intermédiaires utilisées pour fabriquer les vidéos
+/output/**/frames/
+/output/**/turntable/

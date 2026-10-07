@@ -1,0 +1,22 @@
+{
+  "object": "boundary of illustrative coordinate region",
+  "scope_fr": "Géométrie des coordonnées ; paramètres illustratifs ; pas frontière matérielle. Domaine des profils non certifié.",
+  "h": 0.0005,
+  "D": 0.4995,
+  "Xc": 0.2,
+  "eta_c": 0.6,
+  "tau_values": [
+    1.0,
+    0.1,
+    0.01
+  ],
+  "units": "normalized",
+  "mapping": {
+    "q": "tau/(1-eta^2)",
+    "r": "sqrt(2 X q)",
+    "z": "eta q^(1/2-h)"
+  },
+  "source_local": "NavierStokesAndEuler/NavierStokes/SimilarityCoordinates.lean",
+  "color": "eta coordinate, NOT speed",
+  "rotation_or_velocity_field": "not included"
+}

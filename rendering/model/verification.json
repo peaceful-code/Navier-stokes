@@ -1,0 +1,58 @@
+{
+  "scope": "Numerical implementation checks of the local comparison only, not Navier–Stokes validation",
+  "coordinate_roundtrip": {
+    "relative_q_residual": 0.0,
+    "max_X_roundtrip_error": 2.7755575615628914e-17,
+    "max_eta_roundtrip_error": 5.551115123125783e-17
+  },
+  "finite_difference_divergence": [
+    {
+      "centered_difference_step": 2e-05,
+      "max_absolute_divergence": 9.967988177095322e-07,
+      "max_relative_divergence": 4.983996819791546e-09
+    },
+    {
+      "centered_difference_step": 1e-05,
+      "max_absolute_divergence": 2.4923811281496455e-07,
+      "max_relative_divergence": 1.246219905844022e-09
+    },
+    {
+      "centered_difference_step": 5e-06,
+      "max_absolute_divergence": 6.241326389044843e-08,
+      "max_relative_divergence": 3.1206863419054815e-10
+    }
+  ],
+  "f0_series_vs_independent_bessel_max_absolute_errors": {
+    "8": 2.0841375958369213e-08,
+    "12": 1.942890293094024e-15,
+    "24": 2.7755575615628914e-16
+  },
+  "f0_minimum_on_0_4_1": 0.27111405540366446,
+  "f0_scaled_ode_max_absolute_residual": 2.7755575615628914e-16,
+  "axis_factor_vs_independent_quad_absolute_error": 2.375877272697835e-14,
+  "exact_axis_transverse_velocity_max": 0.0,
+  "all_axis_velocities_finite": true,
+  "similarity_scaling_errors": [
+    {
+      "t": 0.96,
+      "radial": 1.3877787807814457e-17,
+      "axial": 8.673617379884035e-19,
+      "angular_rotation_relative": 1.7763568394002505e-15
+    },
+    {
+      "t": 0.99,
+      "radial": 6.938893903907228e-18,
+      "axial": 4.336808689942018e-19,
+      "angular_rotation_relative": 1.9984014443252818e-15
+    },
+    {
+      "t": 0.999,
+      "radial": 3.469446951953614e-18,
+      "axial": 2.168404344971009e-19,
+      "angular_rotation_relative": 1.5543122344752192e-15
+    }
+  ],
+  "nonlinear_profile_error": "Unknown: thresholds and asymptotic constants not evaluated",
+  "navier_stokes_momentum_residual": "Not asserted zero; this comparison is not a Navier–Stokes solution",
+  "passed": true
+}

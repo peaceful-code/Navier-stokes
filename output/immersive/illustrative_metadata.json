@@ -1,0 +1,90 @@
+{
+  "title": "Spirales entrantes et jets axiaux — modèle pédagogique indépendant",
+  "status": "illustration cinématique incompressible; profils choisis pour la lisibilité",
+  "not_a_reconstruction_of_the_paper": true,
+  "not_claimed_to_solve_navier_stokes": true,
+  "independent_of_previous_appendix_B_comparison": true,
+  "units": "unités illustratives arbitraires, sans calibration physique",
+  "parameters": {
+    "a": 0.65,
+    "K": 24.0,
+    "rc": 2.2,
+    "zc": 2.5,
+    "z_end": 3.5,
+    "point_count": 513,
+    "azimuth_count": 12,
+    "h_presentation": 0.0005,
+    "tau_min_presentation": 0.0001,
+    "tau_max_presentation": 1.0
+  },
+  "formula_cylindrical": {
+    "u_r": "-a*r/2",
+    "u_z": "a*z",
+    "Omega": "K*(1-exp(-r*r/(rc*rc)))/(r*r)*exp(-(z/zc)^2)",
+    "Omega_on_axis": "(K/(rc*rc))*exp(-(z/zc)^2)",
+    "u_theta": "r*Omega",
+    "streamline": "r=r0*exp(-a*s/2); z=z0*exp(a*s); theta=theta0+integral(Omega ds)"
+  },
+  "schema": {
+    "positions": "list[curve][x0,y0,z0,x1,y1,z1,...]; Cartesian coordinates in the reference geometry",
+    "omega": "list[curve][Omega0,Omega1,...]; same indexing as positions, angular velocity, not vorticity",
+    "curve_metadata": "list[curve] containing seeds, branch, angular phase, number of turns and maximum s"
+  },
+  "curve_count": 144,
+  "points_per_curve": 513,
+  "curve_direction": "Increasing vertex index follows the field: inward radially, upward on positive branch, downward on negative branch",
+  "turns_min": 6.1679191922408085,
+  "turns_max": 9.246410421443997,
+  "turns_before_radius_one_min": 1.9069773189968051,
+  "turns_before_radius_one_max": 2.184289215592621,
+  "swirl_design": "rc=2.2 and K=24 distribute about two turns across the visible disk before r=1, with fewer than ten turns in each full branch",
+  "bounding_box": {
+    "min": [
+      -3.9999842925716886,
+      -3.9999842925716886,
+      -3.5000000000000036
+    ],
+    "max": [
+      3.9999842925716886,
+      3.9999842925716886,
+      3.5000000000000036
+    ]
+  },
+  "color": {
+    "quantity": "angular velocity Omega = u_theta/r; NOT total speed and NOT curl(u)",
+    "scale": "linear",
+    "min": 0.0,
+    "max": 4.958677685950413,
+    "sampled_min": 0.6971866457878725,
+    "sampled_max": 4.930937768738857,
+    "low_hex": "#27c6d0",
+    "middle_hex": "#3268bd",
+    "high_hex": "#efb66d",
+    "time_rule": "Use Omega_reference for fixed normalized colors. For an absolute displayed value multiply by tau^(-1-h) and label that factor."
+  },
+  "presentation_scaling": {
+    "h": 0.0005,
+    "tau_min": 0.0001,
+    "tau_max": 1.0,
+    "radial_scale": "sqrt(tau)",
+    "axial_scale": "tau^(0.5-h)",
+    "angular_velocity_scale": "tau^(-1-h)",
+    "instantaneous_field_pushforward": "u_tau(x)=tau^(-1-h)*D_tau*u_0(D_tau^-1*x), D_tau=diag(sqrt(tau),sqrt(tau),tau^(.5-h))",
+    "radial_and_azimuthal_velocity_scale": "tau^(-.5-h)",
+    "axial_velocity_scale": "tau^(-.5-2h); specific to this illustrative pushforward, not the paper's axial profile",
+    "why_pushforward": "At each fixed tau, it preserves exact tangency to the transformed curves and incompressibility. It does not solve a time-dependent momentum equation.",
+    "clock": "logarithmic in tau, tau clamped strictly above zero",
+    "not_a_dynamical_simulation": true,
+    "explanation": "Scales applied to a fixed reference geometry to illustrate concentration. These are not particle trajectories in the time-dependent theorem solution.",
+    "zoom": "Any magnification must be labelled; zoom changes apparent size, not physical coordinates."
+  },
+  "rendering_conventions": {
+    "tubes_or_ribbons": "graphic thickness only; curves are not solid material layers",
+    "moving_streaks": "direction markers with a presentation clock; no physical-particle interpretation is supplied",
+    "singular_time": "never evaluated; all shapes, lengths, colors and displayed values remain finite"
+  },
+  "export_precision": "positions and Omega rounded to 7 decimal places; numeric checks use the unrounded reference arrays",
+  "checks_passed": true,
+  "reproduction": ".venv/bin/python rendering/illustrative_model.py",
+  "provenance": "Explicit independent field chosen for this educational rendering; no image-derived coordinates and no reconstructed theorem profiles"
+}

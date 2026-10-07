@@ -1,0 +1,38 @@
+{
+  "input": "/Users/Office/antigravity/Navier-stokes/output/render3d/vortex.ply",
+  "scope": "Paramètres exploratoires — la solution complète n’est pas reconstruite",
+  "title": "Vortex : champ local de comparaison",
+  "display_transform": {
+    "source_min": [
+      -0.06567070633172989,
+      -0.06567070633172989,
+      -0.11564415693283081
+    ],
+    "source_max": [
+      0.06567070633172989,
+      0.06567070633172989,
+      0.11564414948225021
+    ],
+    "uniform_scale": 27.671091085550003,
+    "translation": [
+      -0.0,
+      -0.0,
+      1.030828471471068e-07
+    ],
+    "colour_attribute": "Col",
+    "vertices": 175104,
+    "faces": 346752
+  },
+  "blender_version": "4.5.9 LTS",
+  "engine": "CYCLES",
+  "image_size": [
+    1600,
+    1200
+  ],
+  "camera_turntable_frames": 96,
+  "camera_turntable_fps": 24,
+  "camera_only_animation": true,
+  "physical_time_changes": false,
+  "camera_distance_display_units": 28.609660901560662,
+  "note": "Uniform scale and translation preserve geometry proportions. Lighting changes display colours; original RGB and scalar data remain in source files."
+}

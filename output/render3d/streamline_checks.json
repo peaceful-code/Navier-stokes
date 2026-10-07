@@ -1,0 +1,8 @@
+{
+  "flux_invariant_max_relative_error": 2.6645352591003757e-15,
+  "streamline_direction_error_sine_p99": 5.1182395586177184e-05,
+  "points_outside_comparison_domain": 0,
+  "angle_change_doubling_resolution_radians": 7.641220545195893e-09,
+  "all_values_finite": true,
+  "model_error_for_true_solution": "not bounded; omitted nonlinear and pressure corrections"
+}

@@ -1,0 +1,24 @@
+{
+  "mapping_relative_residual_max": 3.7180351840381466e-16,
+  "inverse_X_absolute_error_max": 8.326672684688674e-17,
+  "inverse_eta_absolute_error_max": 1.1102230246251565e-16,
+  "anisotropic_scaling_max_absolute_error": 2.7755575615628914e-17,
+  "quadrature_volume_tau_1": 2.237828170746863,
+  "quadrature_absolute_error_estimate": 1.208016444245797e-13,
+  "mesh_relative_volume_errors": {
+    "coarse_32x48": 0.002570242623879948,
+    "fine_128x192": 0.0001607289908742704
+  },
+  "mesh_volume_converges_on_refinement": true,
+  "closed_mesh_boundary_edge_count": 0,
+  "points": 24770,
+  "triangles": 49536,
+  "aspect_increase_tau_1_to_0p01_percent": 0.23052380778996184,
+  "physical_time_sampling": "The video samples log(tau); its playback rate is not physical time.",
+  "limitations": [
+    "Coordinate geometry only; no velocity field.",
+    "Xc and eta_c are illustrative, not certified as admissible profile-domain limits.",
+    "No claim of a material boundary, exact official-image reproduction, or full PDE solution."
+  ],
+  "passed": true
+}

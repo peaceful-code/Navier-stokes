@@ -1,0 +1,47 @@
+[
+  {
+    "tau": 1.0,
+    "t": 0.0,
+    "radius_at_equator": 0.6324555320336759,
+    "max_radius": 0.7905694150420949,
+    "half_height": 0.7498326610075172,
+    "height": 1.4996653220150344,
+    "height_over_diameter": 0.9484716291074724,
+    "volume": 2.237828170746863,
+    "radius_factor_vs_tau_1": 1.0,
+    "height_factor_vs_tau_1": 1.0,
+    "aspect_factor_vs_tau_1": 1.0,
+    "volume_factor_vs_tau_1": 1.0,
+    "mesh_volume": 2.2374684868832286
+  },
+  {
+    "tau": 0.1,
+    "t": 0.9,
+    "radius_at_equator": 0.2,
+    "max_radius": 0.25,
+    "half_height": 0.23739105656335469,
+    "height": 0.47478211312670937,
+    "height_over_diameter": 0.9495642262534187,
+    "volume": 0.07084785999412625,
+    "radius_factor_vs_tau_1": 0.31622776601683794,
+    "height_factor_vs_tau_1": 0.3165920463432238,
+    "aspect_factor_vs_tau_1": 1.001151955538169,
+    "volume_factor_vs_tau_1": 0.031659204634322376,
+    "mesh_volume": 0.07083647268908358
+  },
+  {
+    "tau": 0.01,
+    "t": 0.99,
+    "radius_at_equator": 0.06324555320336758,
+    "max_radius": 0.07905694150420949,
+    "half_height": 0.07515612038097245,
+    "height": 0.1503122407619449,
+    "height_over_diameter": 0.9506580820226984,
+    "volume": 0.0022429868974578647,
+    "radius_factor_vs_tau_1": 0.1,
+    "height_factor_vs_tau_1": 0.10023052380778996,
+    "aspect_factor_vs_tau_1": 1.0023052380778996,
+    "volume_factor_vs_tau_1": 0.0010023052380778994,
+    "mesh_volume": 0.0022426263844373224
+  }
+]

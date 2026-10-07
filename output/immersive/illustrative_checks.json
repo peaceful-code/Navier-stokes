@@ -1,0 +1,39 @@
+{
+  "scope": "Checks of the independent illustrative kinematic field only, not of the paper's solution",
+  "analytic_divergence": "(-a/2)+(-a/2)+a=0; the axisymmetric azimuthal part has zero divergence",
+  "finite_difference_divergence": [
+    {
+      "finite_difference_step": 0.0002,
+      "max_absolute": 3.1654540100234385e-09,
+      "max_relative": 1.409868743164312e-09
+    },
+    {
+      "finite_difference_step": 0.0001,
+      "max_absolute": 7.972789095589405e-10,
+      "max_relative": 3.5650147115058217e-10
+    },
+    {
+      "finite_difference_step": 5e-05,
+      "max_absolute": 1.9761969838327786e-10,
+      "max_relative": 9.019130674140528e-11
+    }
+  ],
+  "max_relative_meridional_invariant_error_r_squared_z": 9.992007221626409e-16,
+  "angular_quadrature_max_change_on_doubling_intervals_radians": 8.871618462080733e-08,
+  "curve_position_max_change_on_doubling_intervals": 2.0501703171533266e-08,
+  "tangent_direction_sine_p99": 0.0012854072609523063,
+  "tangent_direction_sine_p99_refined": 0.00032001528923640966,
+  "minimum_direction_cosine": 0.9999990087004743,
+  "axis_omega_limit": 4.958677685950413,
+  "axis_omega_computed": 4.958677685950413,
+  "axis_origin_velocity": [
+    -0.0,
+    0.0,
+    0.0
+  ],
+  "all_values_finite": true,
+  "navier_stokes_momentum_equation": "Not checked or claimed; this is an illustrative prescribed velocity field",
+  "pushforward_velocity_max_relative_error": 4.736563098540452e-16,
+  "passed": true,
+  "max_export_position_rounding_error": 8.527801102902274e-08
+}

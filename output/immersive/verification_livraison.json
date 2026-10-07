@@ -1,0 +1,83 @@
+{
+  "scope": "Independent pedagogical velocity field; not a reconstruction of the Navier–Stokes solution",
+  "files": [
+    {
+      "file": "EXPLORER_LE_VORTEX.html",
+      "bytes": 3407199,
+      "sha256": "a068210f13a999e2205c3adb0805ef4db27fb51cf645f136d96946b58c2b46e4"
+    },
+    {
+      "file": "apercu_immersif.png",
+      "bytes": 2170771,
+      "sha256": "55936a15c567216fc502effd3e83f7b3db046df2248a0ad3d0f427767d5d655b"
+    },
+    {
+      "file": "animation_immersive.mp4",
+      "bytes": 4060695,
+      "sha256": "4232b351eac126d8db0d0d48064c0e502a31b2fa6e641b90b3f87a61447971e0"
+    },
+    {
+      "file": "vortex_immersif.blend",
+      "bytes": 46810341,
+      "sha256": "a8da76199358dc9832031c0ab8ece1aa49fba144d01ea550b0a6bf81facb6827"
+    },
+    {
+      "file": "flow_data.json",
+      "bytes": 3070192,
+      "sha256": "7ff6a326d579e0b3dc2a2f04fc8ec56c22b5f9639b50a2d0e2d5d4fe6e106fd3"
+    },
+    {
+      "file": "illustrative_metadata.json",
+      "bytes": 4275,
+      "sha256": "98c3e7f65d169c4d4e1860a1cd0c991976e82ff338a01860909e8561832e353e"
+    },
+    {
+      "file": "illustrative_checks.json",
+      "bytes": 1524,
+      "sha256": "fb78cbda69b11bbc126022d6d3031f1aaec363d48b31f9cd97d483f44406ae30"
+    }
+  ],
+  "html": {
+    "self_contained": true,
+    "external_script_or_style_assets": []
+  },
+  "poster_dimensions": [
+    1920,
+    1080
+  ],
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "nb_frames": "240"
+      }
+    ],
+    "format": {
+      "duration": "10.000000"
+    }
+  },
+  "browser_observations": {
+    "desktop_viewport": [
+      1280,
+      720
+    ],
+    "scene_visually_inspected": true,
+    "pause_and_scrub": true,
+    "magnification_toggle": true,
+    "finite_endpoint_radius_percent": 1,
+    "finite_endpoint_magnification": 100,
+    "half_cut": true,
+    "reference_rings": true,
+    "free_orbit": true,
+    "scope_dialog": true,
+    "png_preview_rendered": true,
+    "png_save_link_present": true,
+    "download_event_confirmation": "not available in this browser automation; PNG preview and link inspected",
+    "console_errors_observed": []
+  },
+  "model_numerical_checks_passed": true
+}

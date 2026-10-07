@@ -1,0 +1,145 @@
+{
+  "scope": "comparaison asymptotique locale, paramètres exploratoires non certifiés pour le théorème",
+  "model_checks": {
+    "scope": "Numerical implementation checks of the local comparison only, not Navier–Stokes validation",
+    "coordinate_roundtrip": {
+      "relative_q_residual": 0.0,
+      "max_X_roundtrip_error": 2.7755575615628914e-17,
+      "max_eta_roundtrip_error": 5.551115123125783e-17
+    },
+    "finite_difference_divergence": [
+      {
+        "centered_difference_step": 2e-05,
+        "max_absolute_divergence": 9.967988177095322e-07,
+        "max_relative_divergence": 4.983996819791546e-09
+      },
+      {
+        "centered_difference_step": 1e-05,
+        "max_absolute_divergence": 2.4923811281496455e-07,
+        "max_relative_divergence": 1.246219905844022e-09
+      },
+      {
+        "centered_difference_step": 5e-06,
+        "max_absolute_divergence": 6.241326389044843e-08,
+        "max_relative_divergence": 3.1206863419054815e-10
+      }
+    ],
+    "f0_series_vs_independent_bessel_max_absolute_errors": {
+      "8": 2.0841375958369213e-08,
+      "12": 1.942890293094024e-15,
+      "24": 2.7755575615628914e-16
+    },
+    "f0_minimum_on_0_4_1": 0.27111405540366446,
+    "f0_scaled_ode_max_absolute_residual": 2.7755575615628914e-16,
+    "axis_factor_vs_independent_quad_absolute_error": 2.375877272697835e-14,
+    "exact_axis_transverse_velocity_max": 0.0,
+    "all_axis_velocities_finite": true,
+    "similarity_scaling_errors": [
+      {
+        "t": 0.96,
+        "radial": 1.3877787807814457e-17,
+        "axial": 8.673617379884035e-19,
+        "angular_rotation_relative": 1.7763568394002505e-15
+      },
+      {
+        "t": 0.99,
+        "radial": 6.938893903907228e-18,
+        "axial": 4.336808689942018e-19,
+        "angular_rotation_relative": 1.9984014443252818e-15
+      },
+      {
+        "t": 0.999,
+        "radial": 3.469446951953614e-18,
+        "axial": 2.168404344971009e-19,
+        "angular_rotation_relative": 1.5543122344752192e-15
+      }
+    ],
+    "nonlinear_profile_error": "Unknown: thresholds and asymptotic constants not evaluated",
+    "navier_stokes_momentum_residual": "Not asserted zero; this comparison is not a Navier–Stokes solution",
+    "passed": true
+  },
+  "streamline_checks": {
+    "flux_invariant_max_relative_error": 2.6645352591003757e-15,
+    "streamline_direction_error_sine_p99": 5.1182395586177184e-05,
+    "points_outside_comparison_domain": 0,
+    "angle_change_doubling_resolution_radians": 7.641220545195893e-09,
+    "all_values_finite": true,
+    "model_error_for_true_solution": "not bounded; omitted nonlinear and pressure corrections"
+  },
+  "geometry_checks": {
+    "mapping_relative_residual_max": 3.7180351840381466e-16,
+    "inverse_X_absolute_error_max": 8.326672684688674e-17,
+    "inverse_eta_absolute_error_max": 1.1102230246251565e-16,
+    "anisotropic_scaling_max_absolute_error": 2.7755575615628914e-17,
+    "quadrature_volume_tau_1": 2.237828170746863,
+    "quadrature_absolute_error_estimate": 1.208016444245797e-13,
+    "mesh_relative_volume_errors": {
+      "coarse_32x48": 0.002570242623879948,
+      "fine_128x192": 0.0001607289908742704
+    },
+    "mesh_volume_converges_on_refinement": true,
+    "closed_mesh_boundary_edge_count": 0,
+    "points": 24770,
+    "triangles": 49536,
+    "aspect_increase_tau_1_to_0p01_percent": 0.23052380778996184,
+    "physical_time_sampling": "The video samples log(tau); its playback rate is not physical time.",
+    "limitations": [
+      "Coordinate geometry only; no velocity field.",
+      "Xc and eta_c are illustrative, not certified as admissible profile-domain limits.",
+      "No claim of a material boundary, exact official-image reproduction, or full PDE solution."
+    ],
+    "passed": true
+  },
+  "files": [
+    {
+      "file": "hero.png",
+      "bytes": 1904616,
+      "sha256": "fe992c70e937c300bf37b2aeb91b3bfaebbebc5338ce36c94b41312a484fac84"
+    },
+    {
+      "file": "vortex.blend",
+      "bytes": 21923557,
+      "sha256": "c9e0eb3a4b3ee30259ba2ea72f3de5fa94fda6e495233aa1faa4671b12bf7f9b"
+    },
+    {
+      "file": "rotation_camera.mp4",
+      "bytes": 1240783,
+      "sha256": "823cb000e1d9610481af43120662adbcf4147f43eae4191dd1b429c5803b1209"
+    },
+    {
+      "file": "apercu_scientifique.png",
+      "bytes": 113788,
+      "sha256": "0f244e578c9c957a4e6269c1800d6c75c29a78792ffa109d76123ca281712430"
+    },
+    {
+      "file": "vortex_interactif.html",
+      "bytes": 11609472,
+      "sha256": "aa3e38851473ff2233e1b397bf9a27853a09ef5f849a9cacc7d9b58bfc9404d7"
+    },
+    {
+      "file": "vortex.ply",
+      "bytes": 7134655,
+      "sha256": "4204c998f225a58bf558a7784e4b9c5bb91a64b31cdb805746ef8d5b57b282f2"
+    },
+    {
+      "file": "champ_comparaison.vts",
+      "bytes": 4487031,
+      "sha256": "79bed37fe4ed609e9fe3ae3bcb8e4d86464a263a8ffbeeb0f86f5447d8e2aac0"
+    },
+    {
+      "file": "donnees_comparaison.npz",
+      "bytes": 4252736,
+      "sha256": "65ab49eb90c4f6f7c5140b43cb51e5bd8986f7a411081fa43a1e91f7f80d46d5"
+    },
+    {
+      "file": "geometry/geometrie_coordonnees.png",
+      "bytes": 390435,
+      "sha256": "f81bad6b7e3e8234c5a946eb33451682642cbf8054c5c38f245afb7f0317034d"
+    },
+    {
+      "file": "geometry/contraction_echelle_fixe_et_zoom.mp4",
+      "bytes": 303557,
+      "sha256": "c31f1ee8de9cc88369a9048e109f7fd34029e3b71efd295959c021fc25c5480d"
+    }
+  ]
+}

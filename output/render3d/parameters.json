@@ -1,0 +1,53 @@
+{
+  "status": "comparaison asymptotique locale, paramètres exploratoires non certifiés pour le théorème",
+  "not_a_navier_stokes_solution": true,
+  "settings": {
+    "h": 0.0005,
+    "j": 0.0005,
+    "Lambda": 64.0,
+    "sigma": 0.1,
+    "amplitude_margin": 1.05,
+    "eta_limit": 0.5,
+    "Y_limit": 4.0,
+    "time": 0.96,
+    "series_terms": 24
+  },
+  "X_limit": 0.0625,
+  "eta_peak": -0.00011112345800968694,
+  "C_real": 1.000177811116662,
+  "C": 1.050186701672495,
+  "normalization": "C=1.05 fois le max réel de phi_* par défaut; le voisinage complexe B.16 et C0(Lambda) ne sont pas calculés",
+  "velocity": "U=U_*; Phi=f0(Y chi); E=sqrt(2X) phi_*/C Phi; ur par incompressibilité exacte",
+  "units": "coordonnées sans dimension; aucune calibration en mètres ou secondes",
+  "rotation_legend": "omega=u_theta/r, vitesse angulaire (ce n'est pas curl(u))",
+  "omissions": [
+    "correction axiale -Y Z_*/(2 Lambda L), faute de pression globale calculée",
+    "point fixe non linéaire de la proposition B.2",
+    "raccordements, profil extérieur, perturbations oscillatoires, localisation, force",
+    "certification des seuils Lambda0, C0, condition B.2 sur sigma et constantes d'erreur"
+  ],
+  "errors": "erreurs numériques testées séparément; erreur de modèle non bornée numériquement",
+  "source": "sources/navier-stokes.pdf, pp. 7–8 et 144–148, équations (3.2), (B.1), (B.3), (B.11)–(B.13)",
+  "render": {
+    "time": 0.96,
+    "curve_count": 96,
+    "points_per_curve": 900,
+    "tube_radius_graphical": 0.000265970644062786,
+    "display_subsampling": 4,
+    "color_quantity": "angular velocity omega",
+    "color_scale": "linear",
+    "color_min": 0,
+    "color_max": 23.847874317848397,
+    "scope_label": "Comparaison locale — paramètres exploratoires, pas la solution complète"
+  },
+  "html_export": "created",
+  "sampled_grid": {
+    "shape": [
+      25,
+      81,
+      49
+    ],
+    "purpose": "grille d’aperçu ; zone étroite de rotation peu résolue axialement ; interpolations et gradients non certifiés",
+    "streamlines_independent_of_grid": true
+  }
+}

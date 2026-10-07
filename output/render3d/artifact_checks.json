@@ -1,0 +1,51 @@
+{
+  "videos": {
+    "rotation_camera.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1600,
+          "height": 1200,
+          "nb_frames": "96"
+        }
+      ],
+      "format": {
+        "duration": "4.000000"
+      }
+    },
+    "geometry/contraction_echelle_fixe_et_zoom.mp4": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1600,
+          "height": 1000,
+          "nb_frames": "108"
+        }
+      ],
+      "format": {
+        "duration": "6.000000"
+      }
+    }
+  },
+  "blender_scene_reopened_successfully": true,
+  "blender_scene_mesh_count": 1,
+  "blender_scene_frames": [
+    1,
+    96
+  ],
+  "html_embedded_zip_integrity_ok": true,
+  "html_embedded_scene_json_bytes": 17692830,
+  "html_external_script_tags": 0,
+  "browser_interaction_test": "not performed: local file URL blocked by browser security policy",
+  "visual_checks": [
+    "hero.png",
+    "apercu_scientifique.png",
+    "turntable/frame_0049.png",
+    "geometry/geometrie_coordonnees.png",
+    "geometry animation sampled frames"
+  ]
+}

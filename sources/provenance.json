@@ -1,0 +1,25 @@
+{
+  "consulted_on": "2026-10-02",
+  "repository": {
+    "url": "https://github.com/openai/NavierStokesAndEuler.git",
+    "local_path": "/Users/Office/antigravity/Navier-stokes/NavierStokesAndEuler",
+    "commit": "f9e8bc5b38b6e212696e8a30e3e91517af887bbd",
+    "branch": "main",
+    "tracked_files": 2669,
+    "lean_files": 2659,
+    "working_tree_clean": true,
+    "lean_build_performed": false
+  },
+  "announcement": "https://openai.com/index/navier-stokes-solution/",
+  "announcement_fr": "https://openai.com/fr-FR/index/navier-stokes-solution/",
+  "paper": {
+    "url": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+    "local_file": "sources/navier-stokes.pdf",
+    "sha256": "0e779481c4da40bd28d1e642e1d8ca57447d129610df28dfa5a11e9af8ae228f"
+  },
+  "user_image": {
+    "original": "/Users/Office/Desktop/PHOTO-2026-09-16-06-29-41.jpg",
+    "local_copy": "sources/PHOTO-2026-09-16-06-29-41.jpg",
+    "sha256": "f5545a09373d76030cc1d72379f8a0c1133e6e84b52b632cfab988fc2f922855"
+  }
+}

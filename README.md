@@ -30,6 +30,7 @@ Les courbes donnent à voir un mouvement en spirale vers le cœur, puis une éva
 
 ## Pour aller plus loin
 
+- [Fiabilité du résultat : du texte mathématique à Lean](FICHE_FIABILITE_TRADUCTION_LEAN.md)
 - [Vortex, accélération et énergie : synthèse physique corrigée](VORTEX_SYNTHESE_PHYSIQUE.md)
 - [Sources, annonce et précautions d’interprétation](ANNONCE_ET_GEOMETRIE.md)
 - [Plan de réalisation 3D](PLAN_RENDU_3D.md)
